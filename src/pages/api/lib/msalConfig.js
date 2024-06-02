@@ -5,7 +5,7 @@ const getRedirectUri = () => {
     const isLocalhost = window.location.hostname === 'localhost';
     return isLocalhost
       ? 'http://localhost:3000/api/auth/microsoft/callback'
-      : 'https://gabrielts212.vercel.app/api/auth/microsoft/callback';
+      : 'https://outro-umber.vercel.app/api/auth/microsoft/callback';
   }
   return 'http://localhost:3000/api/auth/microsoft/callback'; // Default for SSR
 };
