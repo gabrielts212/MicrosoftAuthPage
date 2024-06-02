@@ -22,6 +22,10 @@ const Header = () => {
             />
           </Link> */}
         </div>
+
+
+
+        
         <div className="block lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
