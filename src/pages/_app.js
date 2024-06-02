@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 import { MsalProvider } from '@azure/msal-react';
-import { msalInstance } from '../pages/msalConfig';
+import { msalInstance } from './api/lib/msalConfig';
 
 function MyApp({ Component, pageProps }) {
   return (
