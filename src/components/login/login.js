@@ -42,7 +42,7 @@ const Login = () => {
       scopes: ['openid', 'profile', 'User.Read'],
     }).then(() => {
       if (instance.getAllAccounts().length > 0) {
-        router.push('/registerpage');
+        router.push('/');
       }
     }).catch(e => {
       console.error(e);

@@ -7,7 +7,7 @@ const getRedirectUri = () => {
       ? 'http://localhost:3000/api/auth/microsoft/callback'
       : 'https://outro-umber.vercel.app/api/auth/microsoft/callback';
   }
-  return 'http://localhost:3000/api/auth/microsoft/callback'; // Default for SSR
+  return 'http://localhost:3000/api/auth/microsoft/callback'; 
 };
 
 const msalConfig = {
