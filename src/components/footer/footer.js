@@ -4,7 +4,7 @@ import Logofooter from "../../assets/logofooter.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0c0c0c] text-white py-8">
+    <footer className="bg-[#1F241F] text-white py-8">
       <div className="container mx-auto px-6 text-center">
           <div className="flex items-center justify-center space-x-2  mt-6   mb-6 ">
           <Link href="/" passHref>
