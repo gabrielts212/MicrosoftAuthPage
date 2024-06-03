@@ -14,7 +14,7 @@ const Header = () => {
           </Link>
         </div>
 
-        <div className="block lg:hidden">
+        <div className="block lg:hidden ">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-white focus:outline-none"
@@ -67,21 +67,22 @@ const Header = () => {
           </Link>
         </nav>
         <div
-          className={`lg:flex lg:items-center lg:space-x-4 ${
-            isOpen ? "block" : "hidden"
-          } w-full lg:w-auto mt-4 lg:mt-0`}
-        >
-          <Link href="/loginpage" passHref>
-            <button className="block lg:inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full">
-              LOG IN
-            </button>
-          </Link>
-          <Link href="/registerpage" passHref>
-            <button className="block lg:inline-block border border-green-500 text-green-500 hover:text-green-400 hover:border-green-400 font-bold py-2 px-4 rounded-full">
-              SIGN IN
-            </button>
-          </Link>
-        </div>
+  className={`lg:flex lg:items-center lg:space-x-4 ${
+    isOpen ? "block" : "hidden"
+  } w-full lg:w-auto mt-4 lg:mt-0`}
+>
+  <Link href="/loginpage" passHref>
+    <button className="block lg:inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full mb-3 lg:mb-0 lg:mr-2">
+      LOG IN
+    </button>
+  </Link>
+  <Link href="/registerpage" passHref>
+    <button className="block lg:inline-block border border-green-500 text-green-500 hover:text-green-400 hover:border-green-400 font-bold py-2 px-4 rounded-full">
+      SIGN IN
+    </button>
+  </Link>
+</div>
+
       </div>
     </header>
   );
