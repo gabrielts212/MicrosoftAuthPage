@@ -9,7 +9,7 @@ A minha aplicação front-end e responsiva construída com Next.js, React, Tailw
 As principais tecnologias utilizadas no meu projeto
 
 - Design responsivo com Tailwind CSS
-- Autenticação usando OAuth2 da Microsoft
+- Autenticação usando a Microsoft
 - JSON Web Token (JWT) para autenticação segura
 - Variáveis de ambiente para configuração
 - Construído com Next.js e React
