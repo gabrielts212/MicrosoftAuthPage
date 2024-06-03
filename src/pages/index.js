@@ -1,6 +1,3 @@
-
-
-
 import Classe from "../components/classe/classe";
 import Aboutus from "../components/aboutus/aboutus";
 import Header from "../components/header/header";
@@ -15,9 +12,9 @@ export default function Home() {
     <div className="bg-[#0c0c0c]">
       <Header />
       {/* <Learning/> */}
-      <Features/>
-      <Pricing/>
-      <Classe/>
+      <Features />
+      <Pricing />
+      <Classe />
       <Aboutus />
       <Footer />
     </div>
