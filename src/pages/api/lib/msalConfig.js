@@ -4,15 +4,15 @@ const getRedirectUri = () => {
   if (typeof window !== 'undefined') {
     const isLocalhost = window.location.hostname === 'localhost';
     return isLocalhost
-      ? 'http://localhost:3000/api/auth/microsoft/callback'
-      : 'https://outro-umber.vercel.app/api/auth/microsoft/callback';
+      ? process.env.NEXT_PUBLIC_REDIRECT_URI_LOCAL
+      : process.env.NEXT_PUBLIC_REDIRECT_URI_PROD;
   }
-  return 'http://localhost:3000/api/auth/microsoft/callback'; 
+  return process.env.NEXT_PUBLIC_REDIRECT_URI_LOCAL; 
 };
 
 const msalConfig = {
   auth: {
-    clientId: '14f63b39-4241-4173-84e2-9c632e81ab64',
+    clientId: process.env.NEXT_PUBLIC_MICROSOFT_CLIENT_ID,
     authority: 'https://login.microsoftonline.com/common',
     redirectUri: getRedirectUri(),
   },

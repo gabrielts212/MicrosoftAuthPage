@@ -1,14 +1,16 @@
 import jwt from "jsonwebtoken";
 
+const JWT_SECRET = process.env.JWT_SECRET;
+
 let users = [];
 
 function createToken(user) {
-  return jwt.sign({ name: user.name }, "awda45dw4a4d4a64wd6d5a4w"); 
+  return jwt.sign({ name: user.name }, JWT_SECRET); 
 }
 
 function readToken(token) {
   try {
-    return jwt.verify(token, "");  
+    return jwt.verify(token, JWT_SECRET);  
   } catch (err) {
     throw new Error("Token inválido");
   }

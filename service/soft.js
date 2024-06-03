@@ -1,10 +1,10 @@
 import axios from 'axios';
 import jwt from 'jsonwebtoken';
 
-const MICROSOFT_CLIENT_ID = '14f63b39-4241-4173-84e2-9c632e81ab64';
-const MICROSOFT_CLIENT_SECRET = '0ddc7c07-937a-4989-8eb9-cb2787b8421c';
-const JWT_SECRET = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9'; 
-const REDIRECT_URI = 'http://localhost:3000/api/auth/microsoft/callback';
+const MICROSOFT_CLIENT_ID = process.env.MICROSOFT_CLIENT_ID;
+const MICROSOFT_CLIENT_SECRET = process.env.MICROSOFT_CLIENT_SECRET;
+const JWT_SECRET = process.env.JWT_SECRET;
+const REDIRECT_URI = process.env.REDIRECT_URI;
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {

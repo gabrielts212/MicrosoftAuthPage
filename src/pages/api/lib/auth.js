@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const MICROSOFT_CLIENT_ID = '14f63b39-4241-4173-84e2-9c632e81ab64';
-const REDIRECT_URI = 'http://localhost:3000/api/auth/microsoft/callback';
+const MICROSOFT_CLIENT_ID = process.env.NEXT_PUBLIC_MICROSOFT_CLIENT_ID;
+const REDIRECT_URI = process.env.NEXT_PUBLIC_REDIRECT_URI;
 
 export const loginWithMicrosoft = async () => {
   const response_type = 'code';
