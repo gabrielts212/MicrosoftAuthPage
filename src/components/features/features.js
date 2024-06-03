@@ -2,13 +2,13 @@ import Image from "next/image";
 import React from "react";
 import Slider from "../../assets/slider.png";
 import Featuresimage from "../../assets/featuresimage.png";
-import Shape from "../../assets/shape.png";
+import Backgroundtext from "../../assets/backgroundtext.png";
 
 const Features = () => {
   return (
     <div className="relative bg-[#0c0c0c] text-white py-12 px-6 flex justify-center">
       <div className="absolute inset-0">
-        <Image src={Shape} alt="Background" width={120} height={120} />
+        <Image src={Backgroundtext} alt="Background" width={120} height={120} />
       </div>
       <div className="relative max-w-7xl w-full flex flex-col lg:flex-row items-center justify-between ">
         <div className="w-full lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0 lg:pr-8">
