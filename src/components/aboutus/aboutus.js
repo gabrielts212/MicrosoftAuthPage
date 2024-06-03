@@ -6,13 +6,13 @@ const Aboutus = () => {
     <div className="bg-[#0c0c0c] text-white py-12 px-6">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center relative pb-20">
         <div className="relative w-full md:w-1/2 flex justify-center items-center space-y-6 md:space-y-0 ">
-          <button className="absolute left-0 bg-green-500 text-white rounded-full p-3 focus:outline-none focus:ring-2 focus:ring-green-400">
+          <button className=" hover:bg-green-400 absolute left-0 bg-green-500 text-white rounded-full p-3 focus:outline-none focus:ring-2 focus:ring-green-400">
             <span className="text-3xl">{"<"}</span>
           </button>
           <div className="relative ">
             <Image src={Imageaboutus} alt="Logo"  objectFit="cover" width={260} height={260}/>
           </div>
-          <button className="absolute right-0 bg-green-500 text-white rounded-full p-3 focus:outline-none focus:ring-2 focus:ring-green-400">
+          <button className=" hover:bg-green-400 absolute right-0 bg-green-500 text-white rounded-full p-3 focus:outline-none focus:ring-2 focus:ring-green-400">
             <span className="text-3xl">{">"}</span>
           </button>
         </div>

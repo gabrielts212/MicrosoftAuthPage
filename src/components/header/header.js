@@ -45,22 +45,22 @@ const Header = () => {
               Home
             </span>
           </Link>
-          <Link href="/features" passHref>
+          <Link href="/" passHref>
             <span className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-400 cursor-pointer">
               Features
             </span>
           </Link>
-          <Link href="/pricing" passHref>
+          <Link href="/" passHref>
             <span className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-400 cursor-pointer">
               Pricing
             </span>
           </Link>
-          <Link href="/class" passHref>
+          <Link href="/" passHref>
             <span className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-400 cursor-pointer">
               Class
             </span>
           </Link>
-          <Link href="/about-us" passHref>
+          <Link href="/" passHref>
             <span className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-400 cursor-pointer">
               About Us
             </span>

@@ -50,7 +50,7 @@ const PricingClass = () => {
           ))}
         </div>
         <div className="flex justify-center mt-8">
-          <button className="bg-green-500 text-black px-6 py-2 rounded-full hover:bg-green-600 focus:ring-2 focus:ring-green-400">
+          <button className=" hover:bg-green-400 bg-green-500 text-black px-6 py-2 rounded-full hover:bg-green-600 focus:ring-2 focus:ring-green-400">
             Show All Class
           </button>
         </div>

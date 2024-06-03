@@ -1,52 +1,39 @@
 import Image from 'next/image';
+import Imagehome from "../../assets/imagehome.png";
+import Imagelateral from "../../assets/imagelateral.png";
 
 const Learning = () => {
   return (
-    <div className="bg-[#0c0c0c] text-white py-12 px-6">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
-        <div className="relative w-full lg:w-1/2 flex justify-center lg:justify-start mb-12 lg:mb-0">
-          <div className="relative w-72 h-72">
-            {/* <Image
-              src="/mnt/data/image.png" 
-              alt="Online Learning"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-full"
-            /> */}
-            <div className="absolute top-0 left-0 flex flex-col items-center space-y-2">
-              <div className="relative w-16 h-16 mb-2">
-                {/* <Image
-                  src="/mnt/data/image.png"
-                  alt="Illustration"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
-                /> */}
-              </div>
-              <span>Illustration</span>
-            </div>
-            <div className="absolute bottom-0 right-0 flex flex-col items-center space-y-2">
-              <div className="relative w-16 h-16 mb-2">
-                {/* <Image
-                  src="/mnt/data/image.png" 
-                  alt="UI/UX"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
-                /> */}
-              </div>
-              <span>UI/UX</span>
-            </div>
-          </div>
+    <div className="relative bg-[#0c0c0c] text-white min-h-screen flex flex-col lg:flex-row items-center justify-center lg:justify-between px-4 lg:px-16">
+      <div className="w-full lg:w-1/2 flex items-center justify-center p-4 lg:p-0">
+        <div className="relative">
+          <Image 
+            src={Imagehome}  
+            alt="Background Image"
+            width={550}
+            height={550}
+            className="object-contain"
+          />
         </div>
-        <div className="lg:w-1/2 text-center lg:text-left">
-          <h2 className="text-4xl font-bold mb-4">Your Learning Journey Begins Here!</h2>
-          <p className="text-gray-400 mb-6">
-            Where knowledge meets convenience in the palm of your hand!
-          </p>
-          <button className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 focus:ring-2 focus:ring-green-400">
-            Get Started
-          </button>
+      </div>
+      <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start p-4 lg:p-12 lg:pl-16">
+        <h2 className="text-3xl lg:text-5xl font-bold mb-4 text-center lg:text-left max-w-md">
+          Your Learning Journey Begins Here!
+        </h2>
+        <p className="text-gray-400 mb-6 text-center lg:text-left max-w-md">
+          where knowledge meets convenience in the palm of your hand!
+        </p>
+        <button className="bg-green-500 text-black px-6 py-3 rounded-full mb-6 hover:bg-green-400 transition-colors duration-300">
+          Get Started
+        </button>
+        <div className="relative w-full flex justify-center lg:justify-end">
+          <Image
+            src={Imagelateral}
+            alt="Right Image"
+            width={150}
+            height={150}
+            className="object-contain"
+          />
         </div>
       </div>
     </div>
