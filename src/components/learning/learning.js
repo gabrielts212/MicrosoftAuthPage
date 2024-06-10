@@ -23,7 +23,7 @@ const Learning = () => {
         <p className="text-gray-400 mb-6 text-center lg:text-left max-w-md">
           where knowledge meets convenience in the palm of your hand!
         </p>
-        <button className="bg-green-500 text-black px-6 py-3 rounded-full mb-6 hover:bg-green-400 transition-colors duration-300">
+        <button className="bg-green-500 text-black px-6 py-3 rounded-full mb-6 hover:bg-green-400 transition-colors duration-300 hover:scale-105 transition-transform duration-300 ease-in-out">
           Get Started
         </button>
         <div className="relative w-full flex justify-center lg:justify-end">

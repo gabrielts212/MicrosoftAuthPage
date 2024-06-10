@@ -4,7 +4,7 @@ import Logofooter from "../../assets/logofooter.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1F241F] text-white py-8">
+    <footer className="bg-[#1F241F] text-white py-4">
       <div className="container mx-auto px-6 text-center">
           <div className="flex items-center justify-center space-x-2  mt-6   mb-6 ">
           <Link href="/" passHref>
@@ -13,6 +13,7 @@ const Footer = () => {
               alt="Logo" 
               width={150} 
               height={150} 
+              className="hover:scale-105 transition-transform duration-300 ease-in-out"
             />
           </Link>
           </div>
@@ -38,7 +39,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-center md:flex-row mt-6   space-y-4 md:space-y-0 md:space-x-4">
             <div className="flex flex-col items-center md:items-start">
-            <label className="mb-4 text-gray-500">Newsletter</label>
+            <label className="mb-4 text-gray-500 pl-2">Newsletter</label>
             <div className="flex items-center">
                 <input 
                   type="email" 

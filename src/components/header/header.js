@@ -2,6 +2,21 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import Logofooter from "../../assets/logofooter.png";
+import { motion } from "framer-motion";
+
+const imageVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 1,
+      ease: "easeInOut",
+    },
+  },
+};
+
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -10,7 +25,13 @@ const Header = () => {
       <div className="container mx-auto flex flex-wrap items-center justify-between py-4 px-6">
         <div className="flex items-center">
           <Link href="/" passHref>
-            <Image src={Logofooter} alt="Logo" width={150} height={150} />
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={imageVariants}
+            >
+              <Image src={Logofooter} alt="Logo" width={150} height={150} className="hover:scale-105 transition-transform duration-300 ease-in-out" />
+            </motion.div>
           </Link>
         </div>
 
@@ -67,22 +88,21 @@ const Header = () => {
           </Link>
         </nav>
         <div
-  className={`lg:flex lg:items-center lg:space-x-4 ${
-    isOpen ? "block" : "hidden"
-  } w-full lg:w-auto mt-4 lg:mt-0`}
->
-  <Link href="/loginpage" passHref>
-    <button className="block lg:inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full mb-3 lg:mb-0 lg:mr-2">
-      LOG IN
-    </button>
-  </Link>
-  <Link href="/registerpage" passHref>
-    <button className="block lg:inline-block border border-green-500 text-green-500 hover:text-green-400 hover:border-green-400 font-bold py-2 px-4 rounded-full">
-      SIGN IN
-    </button>
-  </Link>
-</div>
-
+          className={`lg:flex lg:items-center lg:space-x-4 ${
+            isOpen ? "block" : "hidden"
+          } w-full lg:w-auto mt-4 lg:mt-0`}
+        >
+          <Link href="/loginpage" passHref>
+            <button className="block lg:inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full mb-3 lg:mb-0 lg:mr-2  hover:scale-105 transition-transform duration-300 ease-in-out">
+              LOG IN
+            </button>
+          </Link>
+          <Link href="/registerpage" passHref>
+            <button className="block lg:inline-block border border-green-500 text-green-500 hover:text-green-400 hover:border-green-400 font-bold py-2 px-4 rounded-full hover:scale-105 transition-transform duration-300 ease-in-out">
+              SIGN IN
+            </button>
+          </Link>
+        </div>
       </div>
     </header>
   );
