@@ -16,7 +16,6 @@ const imageVariants = {
   },
 };
 
-
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -30,7 +29,13 @@ const Header = () => {
               animate="visible"
               variants={imageVariants}
             >
-              <Image src={Logofooter} alt="Logo" width={150} height={150} className="hover:scale-105 transition-transform duration-300 ease-in-out" />
+              <Image
+                src={Logofooter}
+                alt="Logo"
+                width={150}
+                height={150}
+                className="hover:scale-105 transition-transform duration-300 ease-in-out"
+              />
             </motion.div>
           </Link>
         </div>
