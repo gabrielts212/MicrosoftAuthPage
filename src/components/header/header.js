@@ -93,18 +93,18 @@ const Header = () => {
           </Link>
         </nav>
         <div
-          className={`lg:flex lg:items-center lg:space-x-4 ${
-            isOpen ? "block" : "hidden"
-          } w-full lg:w-auto mt-4 lg:mt-0`}
-        >
+  className={`lg:flex lg:items-center lg:space-x-4 ${
+    isOpen ? "block" : "hidden"
+  } w-full lg:w-auto mt-4 lg:mt-0 ml-[-10px]`}  
+>
           <Link href="/loginpage" passHref>
             <button className="block lg:inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full mb-3 lg:mb-0 lg:mr-2  hover:scale-105 transition-transform duration-300 ease-in-out">
-              LOG IN
+            Sign in
             </button>
           </Link>
           <Link href="/registerpage" passHref>
             <button className="block lg:inline-block border border-green-500 text-green-500 hover:text-green-400 hover:border-green-400 font-bold py-2 px-4 rounded-full hover:scale-105 transition-transform duration-300 ease-in-out">
-              SIGN IN
+               Sign up
             </button>
           </Link>
         </div>
